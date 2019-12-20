@@ -1,0 +1,8 @@
+uuid: ad85f16b-f60b-40f4-b72d-92d0dfa73ed1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Areas of Study'
+vid: areas_of_study
+description: 'Applications of Emil''s research'
+weight: 0
