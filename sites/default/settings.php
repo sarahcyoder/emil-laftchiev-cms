@@ -16,10 +16,12 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 include __DIR__ . "/settings.pantheon.php";
 
+$settings['hash_salt'] = 'b9b297397c3d2b36200940e8d8341c19e97f781e2512dd0149ad01c275f12215';
+
 /**
  * If there is a local settings file, then include it
  */
-$local_settings = __DIR__ . "/settings.local.php";
-if (file_exists($local_settings)) {
-  include $local_settings;
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }
