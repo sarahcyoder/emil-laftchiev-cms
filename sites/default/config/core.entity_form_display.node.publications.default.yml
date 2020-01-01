@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.publications.body
     - field.field.node.publications.field_area_of_study
+    - field.field.node.publications.field_date_published
     - field.field.node.publications.field_publication_url
     - node.type.publications
   module:
+    - datetime
     - link
     - path
     - text
@@ -41,6 +43,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_date_published:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_publication_url:
     weight: 123
