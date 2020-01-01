@@ -12,7 +12,7 @@ field_name: field_publication_url
 entity_type: node
 bundle: publications
 label: 'Publication URL'
-description: 'The URL to where ibe can view the full publication.'
+description: 'The URL to where one can view the full publication.'
 required: false
 translatable: false
 default_value: {  }
