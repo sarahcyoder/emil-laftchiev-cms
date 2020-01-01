@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.publications.body
     - field.field.node.publications.field_area_of_study
+    - field.field.node.publications.field_publication_url
     - node.type.publications
   module:
     - text
@@ -30,3 +31,4 @@ content:
     region: content
 hidden:
   field_area_of_study: true
+  field_publication_url: true

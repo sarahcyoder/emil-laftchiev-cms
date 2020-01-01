@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.node.publications.body
     - field.field.node.publications.field_area_of_study
+    - field.field.node.publications.field_publication_url
     - node.type.publications
   module:
+    - link
     - text
     - user
 id: node.publications.default
@@ -28,6 +30,18 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_publication_url:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100

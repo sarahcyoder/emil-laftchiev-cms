@@ -1,0 +1,23 @@
+uuid: 637c2138-9fcb-4645-84dd-4c872a2cbc6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_url
+    - node.type.publications
+  module:
+    - link
+id: node.publications.field_publication_url
+field_name: field_publication_url
+entity_type: node
+bundle: publications
+label: 'Publication URL'
+description: 'The URL to where ibe can view the full publication.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link
